@@ -1,0 +1,57 @@
+\section{Varför andragradsfunktioner?}
+
+Tidigare i kursen har vi tittat på linjära funktioner.
+De är användbara i många olika sammanhang, inte minst för att skapa modeller för hur olika saker hänger samman:
+hur fattigdom påverkar livslängd i ett land, hur koldioxidutsläpp påverkar globala medeltemperaturen, hur pluggtid påverkar hur man lyckas i skolan, med mera.
+
+Men det finns också samband där det \textit{inte} är lyckat att använda räta linjer för att skapa modeller.
+Här är ett exempel.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.3\textwidth]{bilder/bensinforbrukning.png}
+  \caption{\label{fig:bensinförbrukning}Bensinförbrukning vid olika hastigheter (för en viss bilmodell).}
+\end{figure}
+
+Diagrammet visar hur bensinförbrukningen för en viss bilmodell påverkas av hur fort man kör.
+Förbrukningen ökar eller minskar inte med någon jämn takt -- istället verkar den visa att det finns en lägsta bensinförbrukning om man kör ca 60--80 km/h.
+Om vi försökte beskriva det här sambandet med en rät linje skulle vi helt missa att det finns en bästa hastighet att hålla, eftersom en rät linje skulle visa att bensinförbrukningen hela tiden ökar (eller minskar, beroende på lutning).
+
+Här är ett annat exempel.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.3\textwidth]{bilder/biljettpriser.png}
+  \caption{\label{fig:biljettpriser}Total vinst vid olika priser på bussbiljetter.}
+\end{figure}
+
+Det här diagrammet visar (ett påhittat) försök med olika biljettpriser på bussen, i en svensk stad.
+Med höga priser gör bussbolaget mycket vinst per biljett, men samtidigt är det få personer som köper biljetter.
+Med låga priser är det många som väljer att åka buss, men vinsten för varje biljett blir mindre.
+Någonstans i mitten ligger det ``bästa'' biljettpriset (åtminstone om målet är att maximera vinsten).
+
+\subsection {Andragradsfunktioner och extrempunkter}
+
+För att modellera samband som har en högsta eller lägsta punkt använder man ofta något som heter \textit{andragradsfunktioner}.
+Att de kallas andragradsfunktioner beror på att de innehåller en term med $x^2$ (medan räta linjer skulle kunna kallas förstagradsfunktioner, eftersom de bara innehåller $x^1$).
+
+När vi studerade räta linjen tittade vi särskilt på saker som riktningskoefficient ($k$-värde) och skärning med y-axel ($m$-värde).
+För andragradsfunktioner är det andra egenskaper som är intressanta, och den viktigaste av dem är \textit{extrempunkter} eller \textit{extremvärden}.
+
+\begin{desciption}
+  \item{En extrempunkt} är andragradsfunktionens vändpunkt -- det vill säga där funktionen har sitt högsta eller lägsta (mest extrema) värde. (Det är alltså en punkt med både x- och y-värde.)
+  \item{Ett extremvärde} är funktionens värde i extrempunkten. (Det är alltså ett tal.)
+  \item{Ett maximumvärde} är ett extremvärde som är det högsta möjliga, och alltså ligger på en kurva som går upp och sedan ner.
+  \item{Ett minimumvärde} är ett extremvärde som är det lägsta möjliga, och alltså ligger på en kurva som går ned och sedan upp.
+  \item{En parabel} är en graf för en andragradsfunktion.
+\end{description}
+
+En av de viktigaste användningsområdena för matematik är att hitta extrempunkter för olika samband, vilket inte är så konstigt.
+Med hjälp av matematiska analyser kan man få väl underbyggda svar på frågor som:
+Hur mycket av kommunbudgeten bör läggas på snöröjning?
+Hur mycket ska man träna på gymmet för att få bästa möjliga effekt?
+Hur ska vattenreningsverk styras för att dra så lite energi som möjligt?
+
+I många situationer är samband och extrempunkter svåra att hitta, och kräver stora studier.
+I det här avsnittet i kursen ska vi titta på några enklare exempel, och se hur vi kan använda andragradsfunktioner för att hitta extrempunkter.
+
