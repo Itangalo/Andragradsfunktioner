@@ -11,16 +11,53 @@ Om en andragradsfunktion är skriven på kvadratkompletterad form är det lätt 
 
 \subsection{Hitta extremvärdet för en andragradsfunktion}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.3\textwidth]{bilder/2(x-3)^2+1.png}
+  \caption{\label{fig:2(x-3)^2+1}Grafen till funktionen $f(x)=2(x-3)^2+1$.}
+\end{figure}
+
 Ta en titt på grafen till funktionen $f(x) = 2(x-3)^2+1$.
 Vi kan se från funktionens graf att det minsta värdet funktionen kan anta är 1, och vi kan se att det värdet får funktionen när $x=3$.
-Men vi kan läsa samma information direkt ur funktionsuttrycket också! Hur då?
+Men vi kan läsa samma information direkt ur funktionsuttrycket också. Hur då?
 
-Funktionsuttrycket består av två delar -- en kvadrat ($2(x-3)^2$) vars värde bestäms av $x$, och en konstant (1).
+Funktionsuttrycket består av två delar -- en kvadrat $2(x-3)^2$ vars värde bestäms av $x$, och en konstant 1.
 Beroende på vilket värde vi ger $x$ kommer kvadratdelen att bli olika stor, men den kommer alltid att bli \emph{positiv} (eftersom även negativa värden blir positiva när de kvadreras).
 Vi skulle alltså kunna tolka funktionen som att vi har talet 1, och ska lägga till ett annat tal som är 0 eller större beorende på vad x är.
 
+Ser man funktionsuttrycket på det viset är det ganska lätt att se att 1 är det minsta värdet som funktionen kan ha.
+Vi kan i allmänhet dra slutsatsen att om en andragradsfunktion beskrivs av $f(x)=a(x+d)^2+e$ är funktionens extremvärde $e$.
+
+Om vi inte bara är intresserade av extrevärdet, utan även \emph{extrempunkten}, räcker det inte att hitta y-värdet för extrempunkten -- vi måste också hitta vilket x-värde som ger funktionen dess extremvärde.
+När blir $f(x) = 2(x-3)^2+1$ så litet som möjligt?
+Ja, om funktionen består av talet 1 plus en kvadratterm, måste funktion få sitt lägsta värde när kvadraten är noll.
+När blir $2(x-3)^2 = 0$? Jo, när värdet inomparentes blir noll -- det vill säga när $x = 3$.
+Vi kan i allmänhet dra slutsatsen att om en andragradsfunktion beskrivs av $f(x)=a(x+d)^2+e$ är x-koordinaten för funktionens extrempunkt $-d$.
+
+\subsection{Positiva och negativa andragradsfunktioner}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.3\textwidth]{bilder/-3(x+1)^2+4.png}
+  \caption{\label{fig:-3(x+1)^2+4}Grafen till funktionen $f(x)=-3(x+1)^2+4$.}
+\end{figure}
+
+I den här grafen syns en annan andragradsfunktion, nämligen $f(x)=-3(x+1)^2+4$.
+Vi kan, både från grafen och funktionsuttrycket, se att funktionens extrempunkt är $(-1, 4)$.
+Men extrempunkten är en \emph{maximumpunkt} -- den högsta punkten på kurvan -- istället för en minimumpunkt.
+
+Även detta kan vi läsa direkt från funktionsuttrycket:
+Kvadrattermen är i det här fallet \emph{negativ}; i förra exemplet hade vi ``1 plus en kvadrat'', men här har vi istället ``4 \emph{minus} en kvadrat''.
+Funktionens värde kommer alltså att vara \emph{som mest} 4, och det värdet får funktionen då kvadraten blir noll (det vill säga $x=-1$).
+
+Vi kan i allmänhet dra slutsatsen att om faktorn $a$ är positiv har funktionen en minimumpunkt, och om $a$ är negativ har funktionen en maximumpunkt.
+Man brukar ibland prata om positiva och negativa andragradsfunktioner, vilket betyder att $a$-värdet är positivt eller negativt.
 
 \begin{itemize}
   \item \textbf{Allmän form:} $ax^2+bx+c$
   \item \textbf{Kvadratkompletterad form:} $a(x+d)^2+e$
+  \item En andragradsfunktion $f(x)=a(x+d)^2+e$ har \textbf{extremvärdet $e$}.
+  \item En andragradsfunktion $f(x)=a(x+d)^2+e$ har \textbf{extrempunkten $(-d, e)$}.
+  \item $a > 0$ betyder att funktionen har en minimumpunkt (och är en positiv andragradsfunktion).
+  \item $a < 0$ betyder att funktionen har en maximumpunkt (och är en negativ andragradsfunktion).
 \end{itemize}
