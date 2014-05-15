@@ -12,7 +12,7 @@ Vi kommer att märka att de är betydligt jobbigare att lösa än våra vanliga 
 \subsection{Ett exempel på en andragradsekvation}
 
 \textbf{Exempelproblem}
-I Tomellilla en dag i juli kunde temperaturen beskrivas med funktionen $f(t) = -0,1(x-13)^2+28$.
+I Tomellilla en dag i juli kunde temperaturen beskrivas med funktionen $f(x) = -0,1(x-13)^2+28$.
 \begin{itemize}
   \item $t$: antalet timmar sedan midnatt
   \item $f(t)$: temperaturen i grader celsius
@@ -25,6 +25,12 @@ Tobias gillar att springa, men vill inte springa när det är varmare än 18^{\c
   \item När var det som varmast, och hur varmt var det då?
   \item När var det 18$^{\circ}$C?
 \end{enumerate}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{bilder/temperatur.png}
+  \caption{\label{fig:temperatur}Grafen till funktionen $f(x) = -0,1(x-13)^2+28$, med linjen $y=18$ markerad.}
+\end{figure}
 
 \textbf{Lösningsförslag}
 \begin{enumerate}[(a)]
@@ -57,18 +63,32 @@ Observera att vi även tar med den negativa lösningen i sista steget -- ekvatio
 \subsubsection{Att lösa andragradsekvationer}
 
 Vi kan lösa andragradsekvationer på precis samma sätt som potensekvationen ovan, om vi behandlar parentesen med $x$ som en enhet:
-
-\begin{tabular}{l|p{4.7cm}}
-  $-0,1(x-13)^2+28=18$ & dra bort 28 \\
-  $\Leftrightarrow -0,1(x-13)^2=-10$ & multiplicera med $-1$ \\
-  $\Leftrightarrow 0,1(x-13)^2=10$ & dividera med $0,1$ \\
-  $\Leftrightarrow (x-13)^2=100$ & dra kvadratroten ur båda leden och ta med negativ lösning \\
-  $\Leftrightarrow (x-13)=10$ eller $(x-13)=-10$
-\end{tabular}
-
 Den enda skillnaden är att vi blir tvungna att göra ett extra steg i slutet, där vi räknar ut vad $x$ är (istället för $x-13$):
 
-\begin{tabular}{l|p{4.7cm}}
-  (x-13)=10$ eller $(x-13)=-10$ & lägg till 13 \\
-  $\Leftrightarrow x = 23$ eller $x=3$
+\begin{tabular}{r p{5cm}|p{4.7cm}}
+  & $-0,1(x-13)^2+28=18$ & dra bort 28 \\
+  $\Leftrightarrow$ & $-0,1(x-13)^2=-10$ & multiplicera med $-1$ \\
+  $\Leftrightarrow$ & $0,1(x-13)^2=10$ & dividera med $0,1$ \\
+  $\Leftrightarrow$ & $(x-13)^2=100$ & dra kvadratroten ur båda leden och ta med negativ lösning \\
+  $\Leftrightarrow$ & $x-13=10$ eller $x-13=-10$ & \textbf{lägg till 13} \\
+  $\Leftrightarrow$ & $x = 23$ eller $x=3$  
 \end{tabular}
+
+Det är värt att poängtera att när vi drar kvadratroten ur $(x-13)^2$, är det \emph{hela} det uttrycket vi drar roten ur -- vi tar alltså inte roten ur $x$ och $13$ för sig.
+
+\subsubsection{Två lösningar till andragradsekvationer}
+
+När man löser andragradsekvationer kommer vi, i många lägen, få \emph{två} lösningar.
+Om vi tittar på grafen ovan kan vi se att $f(x) = -0,1(x-13)^2+28$ får värdet 18 två gånger -- så det är inte konstigt att vi hittar två olika $x$-värden som löser ekvationen $f(x)=18$.
+Båda dessa $x$-värden är korrekta lösningar, och det är ingen som är ``bättre'' eller ``mer korrekt'' än den andra.
+Vi har helt enkelt två olika lösningar på ekvationen.
+
+När man har mer än en lösning till en ekvation är det vanligt att man numrerar de olika lösningarna.
+I vårt fall hade vi skrivit $x_1=23$ och $x_2=3$.
+Det nedsänkta talet kallas \emph{index}, och man uttalar lösningarna ``x-ett är 23 och x-två är 3''.
+(De nedsänkta talen är alltså inget räknesätt, som det är med upphöjda tal, utan bara ett sätt att skilja olika $x$-värden åt.)
+
+Ett annat sätt att markera två lösningar är att använda tecknet $\pm$.
+Att skriva $x=\pm 5$ betyder att $x$ är $+5$ \emph{eller} $-5$.
+I vår lösning ovan hade vi kunnat skriva $x=13 \pm 10$, vilket betyder att $x=13+10$ \emph{eller} $x=13-10$.
+Om man väljer att använda \pm eller skriva ut och numrera de olika lösningarna är en smaksak, men man bör tänka på att det ska vara enkelt att läsa.
