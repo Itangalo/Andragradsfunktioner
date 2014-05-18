@@ -5,8 +5,35 @@ Tack vare det kan vi ta alla okända termer ($x$-termer) på ena sidan i en ekva
 
 Andragradsuttryck där alla okända termer är samlade i en kvadrat kallas \emph{kvadratkompletterade}, och det är inte alla gånger som andragradsuttryck är skrivna på den formen.
 I det här avsnittet ska vi lära oss att omvandla ett andragradsuttryck skrivet på allmän form ($ax^2 + bx + c$) till ett kvadratkompletterat uttryck.
-Det arbetet kräver att vi är bekväma med att multiplicera parenteser som innehåller algebraiska uttryck, och att vi är säkra på att lösa linjära ekvationer.
+Det arbetet kräver att vi är säkra på att lösa linjära ekvationer, men också att vi är bekväma med att multiplicera parentesuttryck som $(x+3)(2-x)$.
+
+Hur hanterar vi sådana uttryck?
 
 \subsection{Att multiplicera två parentesuttryck}
 
-I matte 1 har vi tränat på att multiplicera parenteser med ett tal, 
+I matte 1 har vi tränat på att multiplicera parentesuttryck med ett tal.
+Det gör vi genom att multiplicera \emph{varje term} i parentesen med talet framför parentesen:
+
+\begin{center}
+$2(5x-9) = 2 \cdot 5x + 2 \cdot (-9) = 10x - 18$
+\end{center}
+
+eller
+
+\begin{center}
+$x(2y+x-3) = x \cdot 2y + x \cdot x + x \cdot (-3) = 2xy + x^2 - 3x$
+\end{center}
+
+Om vi inte har ett tal framför parentesen, utan istället ett helt parentesuttryck, kan vi göra på samma sätt:
+Istället för att multiplicera varje term med $x$, multiplicerar vi med \emph{allt} som står framför parentesen.
+
+\textbf{Exempeluppgift}
+Utveckla uttrycket $(x+3)(2-x)$.
+
+\begin{tabular}{l|p{5.7cm}}
+  \framebox{$(x+3)$}$(2-x)$ & Vi ska multiplicera in $x+3$ i parentesen \\
+  $=$ \framebox{$(x+3)$} $\cdot 2$ + \framebox{$(x+3)$} $\cdot (-x)$ & Vi får nu två nya parentesuttryck, som vi måste utveckla vidare. Det går lättare att se vad vi gör om vi vänder på multiplikationen. \\
+  $=2 \cdot$ \framebox{$(x+3)$} + $(-x) \cdot$ \framebox{$(x+3)$} $\cdot 3$ & Multiplicera in talen framför varje parentes, som vanligt. \\
+  $=2 \cdot x + 2 \cdot 3 + (-x) \cdot x + (-x) \cdot 3$ & Snygga till uttrycken så att de går lättare att läsa. \\
+  $=2x + 6 - x^2  - 3x$ & Förenkla uttrycket genom att slå samman $x$-termerna. (Men håll $x^2$ separat!) \\
+\end{tabular}
