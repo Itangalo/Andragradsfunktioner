@@ -18,17 +18,8 @@ Om vi testar att utveckla det uttrycket kommer vi att märka att det blir precis
 Att kvadratkomplettera uttrycket betyder att vi vill skriva om det till formen $a(x+d)^2+e$, och vår utmaning ligger i att hitta vilka värden på $a$, $d$ och $e$ som gör att vi får samma uttryck som vi började med.
 Att testa om vår kvadratkomplettering stämmer är rätt lätt -- men hur går det till hitta värdena på $a$, $d$ och $e$?
 
-Vår metod går ut på följande steg:
-
-\begin{enumerate}
-  \item Vi vet att vi vill hitta ett uttryck på formen $a(x+d)^2+e$.
-  \item Om vi utvecklar $a(x+d)^2+e$ kan vi se att det är samma sak som $ax^2+2adx+ad^2+e$.
-  \item Om vi jämför $x^2$-termerna med vårt ursprungliga uttryck kan vi hitta vad $a$ måste vara för att termerna ska vara lika.
-  \item När vi vet värdet på $a$ kan vi jämföra $x$-termerna, och på så sätt hitta värdet på $d$.
-  \item När vi vet värdena på både $a$ och $d$ kan vi jämföra de konstanta termerna, och hitta värdet på $e$.
-\end{enumerate}
-
-Vi tittar närmare på exemplet med att kvadratkomplettera $2x^2+28x+5$.
+Vår metod går ut på att ta ett uttryck $a(x+d)^2+e$, och steg för steg undersöka vad $a$, $d$ och $e$ måste ha för värden för att uttrycket ska vara samma sak som $2x^2+28x+5$.
+Det kan vi göra genom att först utveckla $a(x+d)^2+e$, så att det blir skrivet i allmän form.
 
 \smallskip
 \begin{center}
@@ -59,6 +50,52 @@ Vi tittar närmare på exemplet med att kvadratkomplettera $2x^2+28x+5$.
   \end{tabular} & När vi jämför de konstanta termerna får vi ekvationen $2 \cdot 7^2 + e = 5$, vilket ger $e = 5 - 2 \cdot 49 = -93$. & $e=-93$ \\
 
   $\Rightarrow 2x^2+28x+5 = 2(x+7)^2-93$
+\end{tabular}
+\end{center}
+\smallskip
+
+När vi kvadratkompletterat ett uttryck är det klokt att dubbelkolla att uttrycket stämmer, genom att utveckla det (med hjälp av kvadreringsregeln):
+
+\begin{center}
+  $2(x+7)^2-93 = 2 \cdot (x^2 + 14x + 49) - 93 = 2x^2 + 28x + 98 - 93 = 2x^2 + 28x + 5$
+  
+  Stämmer!
+\end{center}
+
+Vi tar ett exempel till:
+
+\textbf{Exempeluppgift}
+Kvadratakomplettera $3x^2 - 9x + 12$.
+
+\smallskip
+\begin{center}
+\begin{tabular}{m{7cm}|m{5cm}|b{2cm}}
+  $$3x^2 - 9x + 12$ = a(x+d)^2+e$ & Vi ansätter ett kvadratkompletterat andragradsuttryck och utvecklar det. \\
+  $\Leftrightarrow$
+  \begin{tabular}{ l l l l }
+    & $3x^2$ & $-9x$ & $+12$ \\
+    $=$ & $ax^2$ & $+2adx$ & $+ad^2+e$ \\
+  \end{tabular} & Vi börjar med att jämföra $x^2$-termerna. & \\
+
+  $\Rightarrow$
+  \begin{tabular}{ l l l l }
+    & $\framebox{3}x^2$ & $-9x$ & $+12$ \\
+    $=$ & $\framebox{a}x^2$ & $+2adx$ & $+ad^2+e$ \\
+  \end{tabular} & När vi har värdet på $a$ kan vi hitta värdet på $d$ genom att titta på $x$-termerna. & $a=3$ \\
+
+  $\Rightarrow$
+  \begin{tabular}{ l l l l }
+    & $3x^2$ & $\framebox{-9}x$ & $+12$ \\
+    $=$ & $3x^2$ & \framebox{$+2\cdot 3 \cdot d$}$x$ & $+3 \cdot d^2+e$ \\
+  \end{tabular} & Ekvationen $6d=-9$ ger oss värdet på $d$. Vi sätter in detta för att hitta värdet på $e$. & $d=\frac{-3}{2}$ \\
+
+  $\Rightarrow$
+  \begin{tabular}{ l l l l }
+    & $3x^2$ & $-9x$ & $\framebox{+12}$ \\
+    $=$ & $3x^2$ &$-9x$ & \framebox{$+3 \cdot \(\frac{-3}{2}\)^2+e$} \\
+  \end{tabular} & Vi hittar värdet på $e$ genom ekvationen $3 \cdot \(\frac{-3}{2}\)^2+e = 12$. & $e=\frac{21}{4}$ \\
+
+  $\Rightarrow 3x^2-9x+12 = 3(x+\frac{-3}{2})^2+\frac{21}{4}$
 \end{tabular}
 \end{center}
 \smallskip
