@@ -105,13 +105,16 @@ Kvadratakomplettera $3x^2 - 9x + 12$.
 \subsection{Fördjupning: Om ansättning som metod}
 
 Metoden med att ansätta ett uttryck, och sedan jobba baklänges för att se vad okända värden måste vara, är användbar inom många områden i matematiken.
+
 Du har säkert redan använt den när du hittat ekvationer för räta linjer:
 En vanlig metod för att hitta ekvationen för en rät linje är att först hitta rikningskoefficienten ($k$-värdet) för linjen, och sedan sätta in värden i ekvationen $y=kx+m$.
 Det här är att \emph{ansätta} en ekvation på formen $y=kx+m$, och sedan se vilket värde $m$ måste ha för att ekvationen ska stämma -- i grunden samma metod som vi använde i kvadratkompletteringen (men där letar vi efter tre värden istället för ett).
 
 Ansättning fungerar när man vet (eller har bra skäl att tro) att man vet vilken form ett uttryck ska ha -- då kan vi sätta in så många kända värden vi har, och försöka hitta de okända värdena.
 
-Här är två andra exempel på när ansättning är en användbar metod:
+Här är två andra exempel på när ansättning är en användbar metod.
+
+\smallskip
 
 \textbf{Exempeluppgift}
 En andragradsfunktion går genom punkterna $(2, 3)$ och $(5, 0)$, och har symmetrilinjen $x=1$. Vad är funktionsuttrycket?
@@ -133,7 +136,7 @@ En andragradsfunktion går genom punkterna $(-1, 4)$, $(0, 1)$ och $(2, 3)$. Vad
 
 \begin{itemize}
   \item Eftersom vi vet att det är en andragradsfunktion vet vi att den kan skrivas på formen $f(x)=a(x+d)^2+e$.
-  Men i det här fallet får vi mycket enklare ekvationer om vi istället använder formen $f(x)=ax^2+bx+c.
+  Men i det här fallet får vi mycket enklare ekvationer om vi istället använder formen $f(x)=ax^2+bx+c$.
   Vi ansätter en sådan funktion, och ser vad $a$, $b$ och $c$ måste vara.
   \item Den första punkten ger att $f(-1)=4$, det vill säga $a \cdot (-1)^2+b \cdot (-1)+c=4 \Leftrightarrow a-b+c=4$.
   \item Den andra punkten ger att $f(0)=1$, det vill säga $a \cdot 0^2+b \cdot 0 +c=1\Leftrightarrow c=1$.
@@ -143,3 +146,15 @@ En andragradsfunktion går genom punkterna $(-1, 4)$, $(0, 1)$ och $(2, 3)$. Vad
   Löser vi ekvationssystemet finner vi att $a=\frac{4}{3}$ och $b=\frac{-5}{3}$.
   Funktionen är alltså $f(x)=\frac{4}{3}x^2 +\frac{-5}{3}x + 1$.
 \end{itemize}
+
+\textbf{Kommentar:} Varför är det bättre att ansätta en funktion på formen $f(x)=ax^2+bx+c$ i det andra exemplet?
+
+Ansättning, precis som många andra metoder för problemlösning i matematik, fungerar bättre ibland och sämre ibland.
+I båda exemplen ovan hade det fungerat att använda standardform eller kvadratkompletterad form, men de samband som hade dykt upp hade blivit enklare eller svårare att reda ut.
+I det första exemplet får vi reda på symmetrilinjen för funktionen, vilket gör att vi redan från början kan sätta $d=-1$.
+Det är en genväg vi kan utnyttja om vi ansätter funktionsuttrycket i kvadratkompletterad form, och därför är det en rimlig startpunkt.
+
+Om vi däremot hade ansatt ett kvadratkompletterat uttryck i andra exemplet, skulle vi ha fått ekvationer som är ordentligt jobbiga (så som $4a+4ad+ad^2+e=3$).
+Det kan vara svårt att förutse vilka lösningsmetoder som blir enkla, och vilka som är svåra.
+En bra princip är att testa en metod man kommer på, och visar den sig svår att fullfölja växlar man till en annan för att se om den fungerar bättre.
+Med tiden får man en känsla för vilka metoder som fungerar bättre och sämre, utan att behöva testa dem.
