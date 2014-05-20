@@ -25,35 +25,30 @@ Det kan vi göra genom att först utveckla $a(x+d)^2+e$, så att det blir skrive
 \begin{center}
 \begin{tabular}{m{7cm}|m{5cm}|b{2cm}}
   $2x^2+28x+5 = a(x+d)^2+e$ & Vi \emph{ansätter} ett kvadratkompletterat andragradsuttryck, och påbörjar arbetet med att vilka värden $a$, $d$ och $e$ måste ha. \\
-  \hline
-  
+
   $\Leftrightarrow$
   \begin{tabular}{ l l l l }
     & $2x^2$ & $+28x$ & $+5$ \\
     $=$ & $ax^2$ & $+2adx$ & $+ad^2+e$ \\
   \end{tabular} & Vi utvecklar vårt ansatta uttryck, för att kunna jämföra term för term. & \\
-  \hline
 
   $\Rightarrow$
   \begin{tabular}{ l l l l }
     & $\framebox{2}x^2$ & $+28x$ & $+5$ \\
     $=$ & $\framebox{a}x^2$ & $+2adx$ & $+ad^2+e$ \\
   \end{tabular} & När vi jämför termerna framför $x^2$ ser vi att $a$ måste vara 2 för att uttrycken ska vara lika. & $a=2$ \\
-  \hline
 
   $\Rightarrow$
   \begin{tabular}{ l l l l }
     & $2x^2$ & $\framebox{+28}x$ & $+5$ \\
     $=$ & $2x^2$ & \framebox{$+2\cdot 2 \cdot d$}$x$ & $+2 \cdot d^2+e$ \\
   \end{tabular} & När vi jämför termerna framför $x$ får vi ekvationen $4d=28$, vilket ger $d = 7$. & $d=7$ \\
-  \hline
 
   $\Rightarrow$
   \begin{tabular}{ l l l l }
     & $2x^2$ & $+28x$ & $\framebox{+5}$ \\
     $=$ & $2x^2$ &$+28x$ & \framebox{$+2 \cdot 7^2+e$} \\
   \end{tabular} & När vi jämför de konstanta termerna får vi ekvationen $2 \cdot 7^2 + e = 5$, vilket ger $e = 5 - 2 \cdot 49 = -93$. & $e=-93$ \\
-  \hline
 
   $\Rightarrow 2x^2+28x+5 = 2(x+7)^2-93$
 \end{tabular}
@@ -64,9 +59,9 @@ När vi kvadratkompletterat ett uttryck är det klokt att dubbelkolla att uttryc
 
 \begin{center}
   $2(x+7)^2-93 = 2 \cdot (x^2 + 14x + 49) - 93 = 2x^2 + 28x + 98 - 93 = 2x^2 + 28x + 5$
-  
-  Stämmer!
 \end{center}
+  
+Stämmer!
 
 Vi tar ett exempel till:
 
@@ -77,37 +72,74 @@ Kvadratakomplettera $3x^2 - 9x + 12$.
 \begin{center}
 \begin{tabular}{m{7cm}|m{5cm}|b{2cm}}
   $$3x^2 - 9x + 12$ = a(x+d)^2+e$ & Vi ansätter ett kvadratkompletterat andragradsuttryck och utvecklar det. \\
-  \hline
-  
+
   $\Leftrightarrow$
   \begin{tabular}{ l l l l }
     & $3x^2$ & $-9x$ & $+12$ \\
     $=$ & $ax^2$ & $+2adx$ & $+ad^2+e$ \\
   \end{tabular} & Vi börjar med att jämföra $x^2$-termerna. & \\
-  \hline
 
   $\Rightarrow$
   \begin{tabular}{ l l l l }
     & $\framebox{3}x^2$ & $-9x$ & $+12$ \\
     $=$ & $\framebox{a}x^2$ & $+2adx$ & $+ad^2+e$ \\
   \end{tabular} & När vi har värdet på $a$ kan vi hitta värdet på $d$ genom att titta på $x$-termerna. & $a=3$ \\
-  \hline
 
   $\Rightarrow$
   \begin{tabular}{ l l l l }
     & $3x^2$ & $\framebox{-9}x$ & $+12$ \\
     $=$ & $3x^2$ & \framebox{$+2\cdot 3 \cdot d$}$x$ & $+3 \cdot d^2+e$ \\
   \end{tabular} & Ekvationen $6d=-9$ ger oss värdet på $d$. Vi sätter in detta för att hitta värdet på $e$. & $d=\frac{-3}{2}$ \\
-  \hline
 
   $\Rightarrow$
   \begin{tabular}{ l l l l }
     & $3x^2$ & $-9x$ & $\framebox{+12}$ \\
     $=$ & $3x^2$ &$-9x$ & \framebox{$+3 \cdot \left ( \frac{-3}{2} \right )^2+e$} \\
   \end{tabular} & Vi hittar värdet på $e$ genom ekvationen $3 \cdot \left ( \frac{-3}{2} \right )^2+e = 12$. & $e=\frac{21}{4}$ \\
-  \hline
 
   $\Rightarrow 3x^2-9x+12 = 3(x+\frac{-3}{2})^2+\frac{21}{4}$
 \end{tabular}
 \end{center}
 \smallskip
+
+\subsection{Fördjupning: Om ansättning som metod}
+
+Metoden med att ansätta ett uttryck, och sedan jobba baklänges för att se vad okända värden måste vara, är användbar inom många områden i matematiken.
+Du har säkert redan använt den när du hittat ekvationer för räta linjer:
+En vanlig metod för att hitta ekvationen för en rät linje är att först hitta rikningskoefficienten ($k$-värdet) för linjen, och sedan sätta in värden i ekvationen $y=kx+m$.
+Det här är att \emph{ansätta} en ekvation på formen $y=kx+m$, och sedan se vilket värde $m$ måste ha för att ekvationen ska stämma -- i grunden samma metod som vi använde i kvadratkompletteringen (men där letar vi efter tre värden istället för ett).
+
+Ansättning fungerar när man vet (eller har bra skäl att tro) att man vet vilken form ett uttryck ska ha -- då kan vi sätta in så många kända värden vi har, och försöka hitta de okända värdena.
+
+Här är två andra exempel på när ansättning är en användbar metod:
+
+\fontbf{Exempeluppgift}
+En andragradsfunktion går genom punkterna $(2, 3)$ och $(5, 0)$, och har symmetrilinjen $x=1$. Vad är funktionsuttrycket?
+
+\begin{itemize}
+  \item Eftersom vi vet att det är en andragradsfunktion vet vi att den kan skrivas på formen $f(x)=a(x+d)^2+e$.
+  \item Eftersom symmetrilinjen är $x=1$ vet vi att $d$-värdet måste vara $-1$.
+  Alltså måste funktionen vara $f(x)=a(x-1)^2+e$, för \emph{något} värde på $a$ och $e$.
+  Vi ansätter en sådan funktion, och ser vad $a$ och $e$ måste vara!
+  \item Den första punkten ger att $f(2)=3$, det vill säga $a(2-1)^2+e=3 \Leftrightarrow a+e=3$.
+  \item Den andra punkten ger att $f(5)=0$, det vill säga $a(5-1)^2+e=0 \Leftrightarrow 16a+e=0$.
+  \item Det här är ett ekvationssystem, som vi kan lösa.
+  Löser vi ekvationssystemet finner vi att $a=\frac{-1}{5}$ och $e=\frac{16}{5}$.
+  Funktionen är alltså $f(x)=\frac{-1}{5}(x-1)^2 + \frac{16}{5}$.
+\end{itemize}
+
+\fontbf{Exempeluppgift}
+En andragradsfunktion går genom punkterna $(-1, 4)$, $(0, 1)$ och $(2, 3)$. Vad är funktionsuttrycket?
+
+\begin{itemize}
+  \item Eftersom vi vet att det är en andragradsfunktion vet vi att den kan skrivas på formen $f(x)=a(x+d)^2+e$.
+  Men i det här fallet får vi mycket enklare ekvationer om vi istället använder formen $f(x)=ax^2+bx+c.
+  Vi ansätter en sådan funktion, och ser vad $a$, $b$ och $c$ måste vara.
+  \item Den första punkten ger att $f(-1)=4$, det vill säga $a \cdot (-1)^2+b \cdot (-1)+c=4 \Leftrightarrow a-b+c=4$.
+  \item Den andra punkten ger att $f(0)=1$, det vill säga $a \cdot 0^2+b \cdot 0 +c=1\Leftrightarrow c=1$.
+  \item Den tredje punkten ger att $f(2)=3$, det vill säga $a \cdot 2^2+b \cdot 2+c=3 \Leftrightarrow 4a+2b+c=3$.
+  \item Eftersom den andra punkten ger oss värde på $c$ kan vi förenkla de andra två ekvationerna.
+  De ger ett ekvationssystem med två obekanta, som vi kan lösa.
+  Löser vi ekvationssystemet finner vi att $a=\frac{4}{3}$ och $b=\frac{-5}{3}$.
+  Funktionen är alltså $f(x)=\frac{4}{3}x^2 +\frac{-5}{3}x + 1$.
+\end{itemize}
