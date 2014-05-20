@@ -15,24 +15,52 @@ I matte 1 har vi tränat på att multiplicera parentesuttryck med ett tal.
 Det gör vi genom att multiplicera \emph{varje term} i parentesen med talet framför parentesen:
 
 \begin{center}
-$2(5x-9) = 2 \cdot 5x + 2 \cdot (-9) = 10x - 18$
+$7(2-x) = \framebox{7} \cdot 2 + \framebox{7} \cdot (-x) = 14 - 7x$
 
 eller
 
-$x(2y+x-3) = x \cdot 2y + x \cdot x + x \cdot (-3) = 2xy + x^2 - 3x$
+$x(2y+x-3) = \framebox{x} \cdot 2y + \framebox{x} \cdot x + \framebox{x} \cdot (-3) = 2xy + x^2 - 3x$
 \end{center}
 
 Om vi inte har ett tal framför parentesen, utan istället ett helt parentesuttryck, kan vi göra på samma sätt:
 Istället för att multiplicera varje term med $x$, multiplicerar vi med \emph{allt} som står framför parentesen.
 
-\textbf{Exempeluppgift}
-Utveckla uttrycket $(x+3)(2-x)$.
+Om vi exempelvis vill utveckla uttrycket $(x+3)(2-x)$ kan vi göra så här:
 
+\smallskip
 \begin{tabular}{l|p{5.7cm}}
-  \framebox{$(x+3)$}$(2-x)$ & Vi ska multiplicera in $x+3$ i parentesen \\
-  $=$ \framebox{$(x+3)$} $\cdot 2$ + \framebox{$(x+3)$} $\cdot (-x)$ & Vi får nu två nya parentesuttryck, som vi måste utveckla vidare. Det går lättare att se vad vi gör om vi vänder på multiplikationen. \\
-  $=2 \cdot$ \framebox{$(x+3)$} + $(-x) \cdot$ \framebox{$(x+3)$} & Multiplicera in talen framför varje parentes, som vanligt. \\
+  $\framebox{(x+3)} (2-x)$ & Vi ska multiplicera in $x+3$ i parentesen \\
+  $= \framebox{(x+3)} \cdot 2 + \framebox{(x+3)} \cdot (-x)$ & Vi får nu två nya parentesuttryck, som vi måste utveckla vidare. Det går lättare att se vad vi gör om vi vänder på multiplikationen. \\
+  $=2 \cdot \framebox{(x+3)} + (-x) \cdot \framebox{(x+3)}$ & Multiplicera in talen framför varje parentes, som vanligt. \\
   $=2 \cdot x + 2 \cdot 3 + (-x) \cdot x + (-x) \cdot 3$ & Snygga till uttrycken så att de går lättare att läsa. \\
   $=2x + 6 - x^2  - 3x$ & Förenkla uttrycket genom att slå samman $x$-termerna. (Men håll $x^2$ separat!) \\
   $=-x^2 - x + 6$ & \\
 \end{tabular}
+\smallskip
+
+Den här metoden för att multiplicera parentesuttryck är bra för att den \emph{alltid} fungerar:
+Om vi vill multiplicera längre uttryck eller krångligare uttryck kan vi alltid följa samma regel.
+Men metoden är inte särskilt snabb, och därför kommer vi att lära oss ett par användbara genvägar.
+
+\subsubsection{Genväg 1: Multiplicera alla möjliga termer}
+
+Den vanligaste genvägen för att multiplicera parentesuttryck är att ta \emph{varje} term i den ena parentesen, multiplicera med \emph{varje} term i den andra, och summera resultaten.
+När man lär sig denna metod brukar man ofta rita pilar mellan termerna, så att man ser att alla möjliga produkter bildats:
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{bilder/parentesmultiplikation.svg}
+  \caption{\label{fig:parentesmultiplikation}Utritning av pilar när man utvecklar uttrycket $(x+3)(x-2)$.}
+\end{figure}
+
+Exempel: Utveckla uttrycket $(x+3)(2-x)$.
+
+\smallskip
+\begin{tabular}{l|p{5.7cm}}
+  $(x+3)(2-x)$ & Vi börjar med att multiplicera $x$ i första parentesen med varje term i andra parentesen. \\
+  $= x \cdot 2 + x \cdot (-x) + (\sout{x} + 3)(2-x)$ &  Vi fortsätter med att även multiplicera trean i första parentesen. \\
+  $= x \cdot 2 + x \cdot (-x) + 3 \cdot 2 + 3 \cdot (-x)$ & Multiplicera in talen framför varje parentes, som vanligt. (Alla termer är nu multiplicerade.) \\
+  $= 2x - x^2 + 6 - 3x$ & Förenkla uttrycket genom att slå samman $x$-termerna. \\
+  $=-x^2 - x + 6$ & \\
+\end{tabular}
+\smallskip
