@@ -1,0 +1,62 @@
+\section{Att kvadratkomplettera andragradsuttryck}
+
+Andragradsuttryck som är skrivna i kvadratkompletterad form har fördelen att vi enkelt kan läsa av extrempunkter och symmetrilinje, och vi kan dessutom lösa andragradsekvationer som är kvadratkompletterade.
+Men i många lägen är inte andragradsuttryck skrivna i kvadratkompletterad form:
+När vi utvecklar parentesmultiplikationer får vi andragradsuttryck skrivna på standardform ($ax^2+bx+c$), och det är också den vanligaste formen när vi får ``färdiga'' andragradsuttryck givna till oss.
+
+I det här avsnittet ska vi lära oss hur vi omvandlar ett andragradsuttryck från standardform till kvadratkompletterad form.
+Det finns flera metoder för det, och den vi kommer att använda kallas för \emph{ansätting}.
+Det är en metod som är användbar i många olika delar av matematiken, och den låter oss också kvadratkomplettera uttryck utan att ta för många steg i huvudet.
+
+\subsection{Uttrycket $a(x+d)^2+e$}
+
+Låt oss börja kvadratkomplettera med ett exempel -- att kvadratkomplettera andragradsuttrycket $2x^2+28x+5$.
+
+Spoiler: Kvadratkompletteringen kommer att leda till att vi hittar uttrycket $2(x+7)^2-93$.
+Om vi testar att utveckla det uttrycket kommer vi att märka att det blir precis $2x^2+28x+5$ -- vilket är ett bra sätt att testa att kvadratkompletteringen är korrekt.
+
+Att kvadratkomplettera uttrycket betyder att vi vill skriva om det till formen $a(x+d)^2+e$, och vår utmaning ligger i att hitta vilka värden på $a$, $d$ och $e$ som gör att vi får samma uttryck som vi började med.
+Att testa om vår kvadratkomplettering stämmer är rätt lätt -- men hur går det till hitta värdena på $a$, $d$ och $e$?
+
+Vår metod går ut på följande steg:
+
+\begin{enumerate}
+  \item Vi vet att vi vill hitta ett uttryck på formen $a(x+d)^2+e$.
+  \item Om vi utvecklar $a(x+d)^2+e$ kan vi se att det är samma sak som $ax^2+2adx+ad^2+e$.
+  \item Om vi jämför $x^2$-termerna med vårt ursprungliga uttryck kan vi hitta vad $a$ måste vara för att termerna ska vara lika.
+  \item När vi vet värdet på $a$ kan vi jämföra $x$-termerna, och på så sätt hitta värdet på $d$.
+  \item När vi vet värdena på både $a$ och $d$ kan vi jämföra de konstanta termerna, och hitta värdet på $e$.
+\end{enumerate}
+
+Vi tittar närmare på exemplet med att kvadratkomplettera $2x^2+28x+5$.
+
+\smallskip
+\begin{tabular}{l|p{5.7cm}|l}
+  $2x^2+28x+5 = a(x+d)^2+e$ & Vi \emph{ansätter} ett kvadratkompletterat andragradsuttryck, och påbörjar arbetet med att vilka värden $a$, $d$ och $e$ måste ha. \\
+  $\Leftrightarrow$
+  \begin{tabular}{ l l l l }
+    & $2x^2$ & $+28x$ & $+5$ \\
+    $=$ & $ax^2$ & $+2adx$ & $+ad^2+e$ \\
+  \end{tabular} & Vi utvecklar vårt ansatta uttryck, för att kunna jämföra term för term. & \\
+
+  $\Rightarrow$
+  \begin{tabular}{ l l l l }
+    & $\framebox{2}x^2$ & $+28x$ & $+5$ \\
+    $=$ & $\framebox{a}x^2$ & $+2adx$ & $+ad^2+e$ \\
+  \end{tabular} & När vi jämför termerna framför $x^2$ ser vi att $a$ måste vara 2 för att uttrycken ska vara lika. & $a=2$ \\
+
+  $\Rightarrow$
+  \begin{tabular}{ l l l l }
+    & $2x^2$ & $\framebox{+28}x$ & $+5$ \\
+    $=$ & $2x^2$ & \framebox{$+2\cdot 2 \cdot d$}$x$ & $+2 \cdot d^2+e$ \\
+  \end{tabular} & När vi jämför termerna framför $x$ får vi ekvationen $4d=28$, vilket ger $d = 7$. & $d=7$\\
+
+  $\Rightarrow$
+  \begin{tabular}{ l l l l }
+    & $2x^2$ & $+28x$ & $\framebox{+5}$ \\
+    $=$ & $2x^2$ &$+28x$ & \framebox{$+2 \cdot 7^2+e$} \\
+  \end{tabular} & När vi jämför de konstanta termerna får vi ekvationen $2 \cdot 7^2 + e = 5$, vilket ger $e = 5 - 2 \cdot 49 = -93$. & $e=-93$ \\
+
+  $\Rightarrow 2x^2+28x+5 = 2(x+7)^2-93$
+\end{tabular}
+\smallskip
