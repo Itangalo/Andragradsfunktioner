@@ -13,7 +13,8 @@ Vi kommer att märka att de är betydligt jobbigare att lösa än våra vanliga 
 
 \textbf{Exempelproblem}
 
-Tobias bor i Tomellilla, och gillar långdistandslöpning. Men han vill inte springa när det är varmare än 18^${\circ}$C. En dag i juli kunde temperaturen beskrivas med funktionen $f(x) = -0,1(x-13)^2+28$. (Se figur nedan.)
+Tobias bor i Tomellilla, och gillar långdistandslöpning. Men han vill inte springa när det är varmare än 18$^{\circ}$C.
+En dag i juli kunde temperaturen beskrivas med funktionen $f(x) = -0,1(x-13)^2+28$. (Se figur nedan.)
 \begin{itemize}
   \item[] $t$: antalet timmar sedan midnatt
   \item[] $f(t)$: temperaturen i grader celsius
@@ -38,12 +39,23 @@ Tobias bor i Tomellilla, och gillar långdistandslöpning. Men han vill inte spr
   \item Genom att titta på funktionsuttrycket kan vi se att extremvärdet är 28, och det får vi när $x=13$. \\
   \textbf{Svar:} Det var som varmast kl. 13, och då var det 28$^{\circ}$C.
   \item Att det är 18$^{\circ}$C är samma sak som att säga $f(x)=18$, vilket ger oss ekvationen $-0,1(x-13)^2+28=18$. \\
-  \textbf{Hur löser vi den?}
+  Vi kan lösa ekvationen grafiskt, genom att hitta skärningspunkterna mellan $f(x)$ och linjen $y=18$.
+  \textbf{Men hur löser vi ekvationen algebraiskt?}
 \end{enumerate}
 
-\subsubsection{En mycket enklare andragradsekvation}
-
 Ja, hur löser vi ekvationen $-0,1(x-13)^2+28=18$?
+
+När vi har något i kvadrat är det lockande att testa att ta roten ur.
+Det måste vi i så fall göra med \emph{hela} vänsterledet och \emph{hela} högerledet:
+$\sqrt{-0,1(x-13)^2+28}=\sqrt{18}$
+
+Här är det nödvändigt att komma ihåg att roten ur en summa inte (\emph{inte!}) är samma sak som roten ur varje term för sig:
+$\sqrt{2+2} \neq \sqrt{2} + \sqrt{2}$
+Därför kan vi inte förenkla vänsterledet i $\sqrt{-0,1(x-13)^2+28}=\sqrt{18}$ på något smidigt sätt.
+
+Vad gör vi då?
+
+\subsubsection{En mycket enklare andragradsekvation}
 
 Låt oss börja med att titta på en mycket enklare ekvation: $-0,1t^2+28=18$.
 Det här är en så kallad potensekvation, som du förmodligen sett en del av i matte 1-kursen.
@@ -53,7 +65,7 @@ Vi kan lösa den genom att isolera potensen ($t^2$) på ena sidan av ekvationen,
 \begin{tabular}{l|p{4.7cm}}
   $-0,1t^2+28=18$ & dra bort 28 \\
   $\Leftrightarrow -0,1t^2=-10$ & multiplicera med $-1$ \\
-  $\Leftrightarrow 0,1t^2=10$ & dividera med $0,1$ \\
+  $\Leftrightarrow 0,1t^2=10$ & dividera med $0{,}1$ \\
   $\Leftrightarrow t^2=100$ & dra kvadratroten ur båda leden och ta med negativ lösning \\
   $\Leftrightarrow t=10$ eller $t=-10$
 \end{tabular}
@@ -83,13 +95,14 @@ När man löser andragradsekvationer kommer vi, i många lägen, få \emph{två}
 Om vi tittar på grafen ovan kan vi se att $f(x) = -0,1(x-13)^2+28$ får värdet 18 två gånger -- så det är inte konstigt att vi hittar två olika $x$-värden som löser ekvationen $f(x)=18$.
 Båda dessa $x$-värden är korrekta lösningar, och det är ingen som är ``bättre'' eller ``mer korrekt'' än den andra.
 Vi har helt enkelt två olika lösningar på ekvationen.
+(I vårt fall betyder det att temperaturen blir 18$^{\circ}$C två gånger.)
 
 När man har mer än en lösning till en ekvation är det vanligt att man numrerar de olika lösningarna.
 I vårt fall hade vi skrivit $x_1=23$ och $x_2=3$.
 Det nedsänkta talet kallas \emph{index}, och man uttalar lösningarna ``x-ett är 23 och x-två är 3''.
 (De nedsänkta talen är alltså inget räknesätt, som det är med upphöjda tal, utan bara ett sätt att skilja olika $x$-värden åt.)
 
-Ett annat sätt att markera två lösningar är att använda tecknet ``$\pm$''.
+Ett annat sätt att markera två lösningar är att använda tecknet $\pm$.
 Att skriva $x=\pm 5$ betyder att $x$ är $+5$ \emph{eller} $-5$.
 I vår lösning ovan hade vi kunnat skriva $x=13 \pm 10$, vilket betyder att $x=13+10$ \emph{eller} $x=13-10$.
 Om man väljer att använda $\pm$ eller skriva ut och numrera de olika lösningarna är en smaksak, men man bör tänka på att det ska vara enkelt att läsa.
