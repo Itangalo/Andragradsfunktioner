@@ -13,11 +13,18 @@ Här är ett exempel.
   \caption{\label{fig:bensinforbr}Bensinförbrukning vid olika hastigheter (för en viss bilmodell).}
 \end{figure}
 
-Diagrammet visar hur bensinförbrukningen för en viss bilmodell påverkas av hur fort man kör.
+Figur 1 visar hur bensinförbrukningen för en viss bilmodell påverkas av hur fort man kör.
 Förbrukningen ökar eller minskar inte med någon jämn takt -- istället verkar den visa att det finns en lägsta bensinförbrukning om man kör ca 60--80 km/h.
 Om vi försökte beskriva det här sambandet med en rät linje skulle vi helt missa att det finns en bästa hastighet att hålla, eftersom en rät linje skulle visa att bensinförbrukningen hela tiden ökar (eller minskar, beroende på lutning).
+För att beskriva sambandet behöver vi istället någon sorts krökt kurva, ungefär som i figur 2.
 
-Här är ett annat exempel.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{bilder/bensinforbr-reg.png}
+  \caption{\label{fig:bensinforbr-reg}En modell för hur bensinförbrukning och hastighet hänger samman.}
+\end{figure}
+
+Figur 3 visar ett annat exempel där vi inte kan använda räta linjer för att beskriva samband.
 
 \begin{figure}
   \centering
@@ -30,13 +37,20 @@ Med höga priser gör bussbolaget mycket vinst per biljett, men samtidigt är de
 Med låga priser är det många som väljer att åka buss, men vinsten för varje biljett blir mindre.
 Någonstans i mitten ligger det ``bästa'' biljettpriset (åtminstone om målet är att maximera vinsten).
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{bilder/busspriser-reg.png}
+  \caption{\label{fig:busspriser-reg}En modell för hur olika busspriser påverkar vinsten för bussbolaget.}
+\end{figure}
+
+
 \subsection {Andragradsfunktioner och extrempunkter}
 
 För att modellera samband som har en högsta eller lägsta punkt använder man ofta något som heter \emph{andragradsfunktioner}.
 Att de kallas andragradsfunktioner beror på att de innehåller en term med $x^2$ (medan räta linjer skulle kunna kallas förstagradsfunktioner, eftersom de bara innehåller $x^1$).
 
 När vi studerade räta linjen tittade vi särskilt på saker som riktningskoefficient ($k$-värde) och skärning med y-axel ($m$-värde).
-För andragradsfunktioner är det andra egenskaper som är intressanta, och den viktigaste av dem är \emph{extrempunkter} eller \emph{extremvärden}.
+För andragradsfunktioner är det andra egenskaper som är intressanta, och de viktigaste av dem är \emph{extrempunkter} och \emph{extremvärden}.
 
 \begin{itemize}
   \item En \textbf{extrempunkt} är andragradsfunktionens vändpunkt -- det vill säga där funktionen har sitt högsta eller lägsta (mest extrema) värde. (Det är alltså en punkt med både x- och y-värde.)
@@ -53,5 +67,4 @@ Hur mycket ska man träna på gymmet för att få bästa möjliga effekt?
 Hur ska vattenreningsverk styras för att dra så lite energi som möjligt?
 
 I många situationer är samband och extrempunkter svåra att hitta, och kräver stora studier.
-I det här avsnittet i kursen ska vi titta på några enklare exempel, och se hur vi kan använda andragradsfunktioner för att hitta extrempunkter.
-
+I det här delområdet i kursen ska vi titta på några enklare exempel, och se hur vi kan använda andragradsfunktioner för att hitta extrempunkter.
